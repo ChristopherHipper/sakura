@@ -7,20 +7,24 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 
 /* in imports muss genau der selbe name wie oben stehen 
-in den templates kann ich HTML code oder eine HTML datei verlinken */
+in den templates kann ich HTML code oder eine HTML datei verlinken 
+@ vor irgendwas ist ein decorator. 
+Ist eine function die um die class unten ausgeführt wird um sie zusätzlich mit informationen zu füllen*/
 @Component({
-    selector: 'app-landingPage',
+    selector: 'app-landingPage', // der Name der componenent um sie später durch ein normalen HTML tag in der HTML aufrufen zu können
     standalone: true,
-    imports: [CommonModule, NavbarComponent],
+    imports: [CommonModule, NavbarComponent], // die obrigen components importieren um sie zu benutzen
     template: `
     <section class="fontRaleway">
         <app-navbar></app-navbar>
-        <h1>Sakura Ramen</h1>
+        <h1>SAKURA RAMEN</h1>
         <h2>Best Ramen in Town</h2>
     </section>
     `,
     styleUrls: ['./landingPage.component.scss']
 })
 
-// ist immer der name den ich in den import eingetragen muss
-export class LandingPageComponent { }
+// ist immer der name den ich in den import eintragen muss. Export um sie überall verwenden zu können
+export class LandingPageComponent { 
+    //TS code...
+}

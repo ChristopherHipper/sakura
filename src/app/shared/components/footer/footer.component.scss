@@ -1,0 +1,21 @@
+footer {
+  padding-left: 160px;
+  padding-right: 160px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 124px;
+  >img {
+    height: 44px;
+  }
+  >nav{
+    >a{
+      margin-left: 24px;
+      >img{
+        height: 40px;
+      }
+    }
+  }
+}
