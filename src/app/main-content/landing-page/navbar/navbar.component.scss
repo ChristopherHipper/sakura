@@ -17,8 +17,10 @@ nav {
         display: flex;
         align-items: center;
         gap: 20px;
+
         >li {
             cursor: pointer;
+
             >a {
                 &:hover {
                     color: #f30e0e;
@@ -50,4 +52,31 @@ a {
     &:hover {
         background-color: #f30e0e;
     }
+}
+
+
+@media (max-width: 500px) {
+    nav {
+        justify-content: center;
+        margin: 10px 20px;
+
+        >img {
+            display: none;
+        }
+
+        >ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;  
+        }
+    }
+}
+
+@media (max-width: 550px) {
+        nav {
+        margin: 10px 10px;
+        }
 }

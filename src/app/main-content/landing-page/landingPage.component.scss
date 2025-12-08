@@ -23,3 +23,23 @@ section {
     color: $main-color;
     text-align: center;
 }
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

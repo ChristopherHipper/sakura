@@ -7,15 +7,45 @@ footer {
   align-items: center;
   background-color: black;
   height: 124px;
-  >img {
-    height: 44px;
-  }
-  >nav{
-    >a{
+
+  >nav {
+    >a {
       margin-left: 24px;
-      >img{
+
+      >img {
         height: 40px;
       }
     }
+  }
+}
+
+.desktop-logo {
+  height: 44px;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+    height: 44px;
   }
 }
