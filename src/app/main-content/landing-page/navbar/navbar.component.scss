@@ -1,10 +1,13 @@
+@import '../../../../styles.scss';
+
+
+
 nav {
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
-    display: flex;
-    justify-content: space-between;
+    @include flex($justify:space-between);
     margin: 20px 40px;
 
     >img {
@@ -14,8 +17,7 @@ nav {
 
     >ul {
         list-style: none;
-        display: flex;
-        align-items: center;
+        @include flex();
         gap: 20px;
 
         >li {
@@ -32,7 +34,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: white;
+    color: $color-white;
 }
 
 .phone_btn {
@@ -41,8 +43,7 @@ a {
     padding: 8px;
     cursor: pointer;
     padding-left: 10px;
-    border: 1px solid white;
-    border-radius: 8px;
+    @include borderStyling();
 
     >img {
         height: 18px;
@@ -70,13 +71,13 @@ a {
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 12px;  
+            font-size: 12px;
         }
     }
 }
 
 @media (max-width: 550px) {
-        nav {
+    nav {
         margin: 10px 10px;
-        }
+    }
 }

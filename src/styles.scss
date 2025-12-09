@@ -4,6 +4,19 @@
     scroll-behavior: smooth;
 }
 
+$color-white: white;
+
+@mixin borderStyling {
+    border: 1px solid $color-white;
+    border-radius: 8px;
+}
+
+@mixin flex($justify:center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 /* raleway-200 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -61,3 +74,4 @@
 .fontEconomica {
     font-family: 'Economica';
 }
+
